@@ -1,22 +1,27 @@
 package patterns;
 
-public class Restaurant2Factory extends RestaurantAbstractFactory{
+public class Restaurant2Factory extends RestaurantAbstractFactory {
 
 	@Override
 	public FastFood getFastFood(String type) {
 		switch (type) {
-		case "pizza": return new Pizza();
-		
-		default: return null;
+		case "pizza":
+			return new Pizza();
+
+		default:
+			return null;
 		}
 	}
 
 	@Override
 	public Drink getDrink(String type) {
 		switch (type) {
-		case "juice": return new Juice();
-		case "beer": return new Beer();
-		default: return null;
+		case "juice":
+			return new Juice();
+		case "beer":
+			return new Beer();
+		default:
+			return null;
 		}
 	}
 
